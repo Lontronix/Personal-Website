@@ -7,7 +7,6 @@ body{
 
 }
 
-
 h1{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -62,3 +61,33 @@ a {
     padding-left: 150px;
 
 }
+
+@media screen and (min-width: 1300px){
+    body{
+        padding-left: 250px;
+        padding-right: 250px;
+
+    }
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        padding-left: 100px;
+        padding-right: 100px;
+
+    }
+}
+
+@media screen and (max-width: 800px){
+    body{
+        flex-wrap: nowrap;
+
+    }
+
+    .wrapper{
+      display: inline-block;
+
+    }
+}
+
+

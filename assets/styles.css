@@ -1,0 +1,64 @@
+body{
+    background-color: #33333D;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    padding-left: 250px;
+    padding-right: 250px;
+
+}
+
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.wrapper{
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.header{
+    text-align: center;
+    font-size: 40px;
+}
+
+.navigation{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.selected{
+    text-decoration: underline;
+}
+
+a {
+    color: inherit;
+}
+
+.left{
+    margin-right: 50px;
+}
+
+.large-link{
+    color: #00b8fc;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.left .large-link{
+    left: auto;
+    right: auto;
+    padding-left: 150px;
+
+}

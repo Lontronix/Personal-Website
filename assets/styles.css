@@ -17,6 +17,11 @@ h2{
     margin-bottom: 10px;
 }
 
+h3{
+    font-size: 25px;
+    color: #00b8fc;
+}
+
 p{
     font-size: 17px;
     line-height: 25px;
@@ -60,6 +65,20 @@ a {
     right: auto;
     padding-left: 150px;
 
+}
+
+.footer{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.social-media-button{
+    padding: 25px;
+    margin-left: 25px;
 }
 
 @media screen and (min-width: 1300px){

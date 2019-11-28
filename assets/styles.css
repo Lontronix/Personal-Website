@@ -50,13 +50,13 @@ p{
     padding-bottom: 15px;
 }
 
-.unselected{
-    text-decoration: none;
+.emphasis{
+    text-decoration: underline;
 }
 
 a {
     color: inherit;
-    text-decoration: underline;
+    text-decoration: none;
     
 }
 

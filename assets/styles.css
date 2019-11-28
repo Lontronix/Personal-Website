@@ -25,12 +25,20 @@ h3{
 p{
     font-size: 17px;
     line-height: 25px;
+    display: inline block;
 }
+
 
 .wrapper{
     flex-wrap: nowrap;
     display: flex;
 }
+
+.text{
+    margin-left: 25%;
+}
+
+
 
 .header{
     text-align: center;
@@ -42,12 +50,14 @@ p{
     padding-bottom: 15px;
 }
 
-.selected{
-    text-decoration: underline;
+.unselected{
+    text-decoration: none;
 }
 
 a {
     color: inherit;
+    text-decoration: underline;
+    
 }
 
 .left{

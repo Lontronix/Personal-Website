@@ -73,7 +73,7 @@ a {
 .left .large-link{
     left: auto;
     right: auto;
-    padding-left: 150px;
+    padding-left: 25%;
 
 }
 
@@ -110,13 +110,32 @@ a {
 @media screen and (max-width: 950px){
     body{
         flex-wrap: nowrap;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+       
 
     }
 
     .wrapper{
       display: inline-block;
+      size: 100%;
+      padding-right: auto;
+
 
     }
+    .left{
+        margin-right: 0px;
+    }
+
+    img{
+       width: 100%;
+    }
+    .header{
+        size: 100%;
+    }
+
+    
 }
 
 

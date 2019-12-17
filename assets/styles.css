@@ -2,9 +2,53 @@ body{
     background-color: #33333D;
     color: white;
     font-family: 'Ubuntu Mono', monospace;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.wrapper{
+    display: grid;
+    grid: "header header"
+          "left-content right-content"
+          "footer footer";
+    gap: 0px 25px;
+    grid-template-columns: 1fr 1fr;
+    
+}
 
+
+.header{
+    text-align: center;
+    font-size: 40px;
+    grid-area: header;
+    /* background-color: pink; */
+}
+
+.left-content{
+    grid-area: left-content;
+   /* background-color: blue; */
+}
+
+.test{
+    float: right;
+    text-align: right; 
+    flex-wrap: nowrap;
+}
+
+
+
+.right-content{
+    grid-area: right-content;
+   /* background-color: orange; */
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+    background-color: green;
+    
 }
 
 h1{
@@ -14,7 +58,7 @@ h1{
 
 h2{
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom:10px;
 }
 
 h3{
@@ -29,10 +73,7 @@ p{
 }
 
 
-.wrapper{
-    flex-wrap: nowrap;
-    display: flex;
-}
+
 
 .text{
     margin-left: 25%;
@@ -40,10 +81,7 @@ p{
 
 
 
-.header{
-    text-align: center;
-    font-size: 40px;
-}
+
 
 .navigation{
     font-size: 20px;
@@ -60,9 +98,8 @@ a {
     
 }
 
-.left{
-    margin-right: 50px;
-}
+
+
 
 .large-link{
     color: #00b8fc;
@@ -70,72 +107,43 @@ a {
     text-decoration: none;
 }
 
-.left .large-link{
+.left-content .large-link{
     left: auto;
     right: auto;
     padding-left: 25%;
 
 }
 
-.footer{
-    margin-top: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-}
+
 
 .social-media-button{
     padding: 25px;
     margin-left: 25px;
 }
 
-@media screen and (min-width: 1300px){
+@media only screen and (max-width: 975px){
     body{
-        padding-left: 250px;
-        padding-right: 250px;
+        padding-left: 0%;
+        padding-right: 0%;
 
     }
-}
-
-@media screen and (max-width: 1200px){
-    body{
-        padding-left: 100px;
-        padding-right: 100px;
-
-    }
-}
-
-@media screen and (max-width: 950px){
-    body{
-        flex-wrap: nowrap;
-        padding-left: 10%;
-        padding-right: 10%;
-       
-
-    }
-
     .wrapper{
-      display: inline-block;
-      padding-right: auto;
-      width: 100%;
+        grid: "header header"
+              "left-content left-content"
+              "right-content right-content"
+              "footer footer";
+
+        
     }
-    .left{
-        margin-right: 0px;
+
+    .test{
+        float: none;
+        text-align: center;
     }
 
     img{
-       width: 100%;
+        width: 50%;
     }
-    .header{
-        size: 100%;
-    }
-
-    .footer{
-        width: 100%;
-    }
-    
 }
 
 

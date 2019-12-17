@@ -35,7 +35,6 @@ body{
 }
 
 
-
 .right-content{
     grid-area: right-content;
    /* background-color: orange; */
@@ -143,6 +142,11 @@ a {
 
     img{
         width: 50%;
+    }
+
+    .social-media-button{
+        padding: 5px;
+        margin-left: 5px;
     }
 }
 

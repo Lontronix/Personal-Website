@@ -25,15 +25,10 @@ body{
 
 .left-content{
     grid-area: left-content;
+    text-align: right;
    /* background-color: blue; */
+   
 }
-
-.test{
-    float: right;
-    text-align: right; 
-    flex-wrap: nowrap;
-}
-
 
 .right-content{
     grid-area: right-content;
@@ -46,7 +41,6 @@ body{
     justify-content: center;
     align-items: center;
     grid-area: footer;
-    background-color: green;
     
 }
 
@@ -70,17 +64,6 @@ p{
     line-height: 25px;
     display: inline block;
 }
-
-
-
-
-.text{
-    margin-left: 25%;
-}
-
-
-
-
 
 .navigation{
     font-size: 20px;
@@ -120,6 +103,13 @@ a {
     margin-left: 25px;
 }
 
+.social-media-icon{
+    float: left;
+    text-align: left;
+}
+
+
+
 @media only screen and (max-width: 975px){
     body{
         padding-left: 0%;
@@ -135,12 +125,13 @@ a {
         
     }
 
-    .test{
-        float: none;
+    .left-content{
         text-align: center;
+        float: none;
+
     }
 
-    img{
+    #main-image{
         width: 50%;
     }
 
@@ -149,5 +140,17 @@ a {
         margin-left: 5px;
     }
 }
+
+@media only screen and (max-width: 600px){
+    .social-button-username{
+        display: inline-block;
+    }
+
+    .footer{
+        padding-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+
 
 

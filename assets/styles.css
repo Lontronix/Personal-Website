@@ -109,7 +109,9 @@ a {
 }
 
 
-@media only screen and (max-width: 975px){
+
+@media only screen and (max-width: 975px)
+{
     body{
         padding-left: 0%;
         padding-right: 0%;
@@ -139,6 +141,14 @@ a {
         margin-left: 5px;
     }
 }
+
+@media only screen and (orientation: landscape) and (max-width: 850px){
+    #main-image{
+        width: 35%;
+    }
+}
+
+
 
 @media only screen and (max-width: 600px){
     .social-button-username{

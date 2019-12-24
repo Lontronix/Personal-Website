@@ -2,8 +2,6 @@ body{
     background-color: #33333D;
     color: white;
     font-family: 'Ubuntu Mono', monospace;
-    padding-right: 10%;
-    padding-left: 10%;
 }
 .wrapper{
     display: grid;
@@ -12,6 +10,8 @@ body{
           "footer footer";
     gap: 0px 25px;
     grid-template-columns: 1fr 1fr;
+    padding-left: 10%;
+    padding-right: 10%;
     
 }
 
@@ -26,13 +26,11 @@ body{
 .left-content{
     grid-area: left-content;
     text-align: right;
-   /* background-color: blue; */
-   
+    
 }
 
 .right-content{
     grid-area: right-content;
-   /* background-color: orange; */
 }
 
 .footer{
@@ -96,8 +94,6 @@ a {
 
 }
 
-
-
 .social-media-button{
     padding: 25px;
     margin-left: 25px;
@@ -108,6 +104,9 @@ a {
     text-align: left;
 }
 
+#main-image{
+    align-self: right;
+}
 
 
 @media only screen and (max-width: 975px){
@@ -132,7 +131,7 @@ a {
     }
 
     #main-image{
-        width: 50%;
+        width: 100%;
     }
 
     .social-media-button{
